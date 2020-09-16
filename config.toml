@@ -2,7 +2,7 @@ baseURL = "https://www.flysnow.org"
 languageCode = "zh-CN"
 title = "测试的博客"
 theme = "maupassant"
-googleAnalytics = ""  # UA-XXXXXXXX-X
+#googleAnalytics = ""  # UA-XXXXXXXX-X
 
 ## 保持分类的原始名字（false会做转小写处理）
 preserveTaxonomyNames = true
