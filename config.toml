@@ -1,6 +1,6 @@
 baseURL = "https://www.flysnow.org"
 languageCode = "zh-CN"
-title = "飞雪无情的博客"
+title = "测试的博客"
 theme = "maupassant"
 googleAnalytics = ""  # UA-XXXXXXXX-X
 
@@ -82,12 +82,6 @@ summaryLength = 140
 ## 配置网站菜单
 
 [menu]
-
-  [[menu.main]]
-    identifier = "tools"
-    name = "工具"
-    url = "/tools/"
-    weight = 2
 
   [[menu.main]]
     identifier = "archives"

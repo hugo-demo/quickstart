@@ -2,8 +2,10 @@
 title: "Go语言|基于channel实现的并发安全的字节池"
 date: 2020-09-16T17:19:38+08:00
 draft: true
+toc : true
 ---
 
+## A
 字节切片[]byte是我们在编码中经常使用到的，比如要读取文件的内容，或者从io.Reader获取数据等，都需要[]byte做缓冲。
 
 1
@@ -20,12 +22,14 @@ MinIO 的字节池
 3
 4
 5
+## B
 type BytePoolCap struct {
 	c    chan []byte
 	w    int
 	wcap int
 }
 BytePoolCap结构体的定义比较简单，共有三个字段：
+### B.a
 
 c是一个chan，用于充当字节缓存池
 w是指使用make函数创建[]byte时候的len参数
@@ -60,6 +64,9 @@ func (bp *BytePoolCap) Get() (b []byte) {
 	}
 	return
 }
+
+### B.c
+
 以上是采用经典的select+chan的方式，能获取到[]byte缓存则获取，获取不到就执行default分支，使用make函数生成一个[]byte。
 
 从这里也可以看到，结构体中定义的w和wcap字段，用于make函数的len和cap参数。
