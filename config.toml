@@ -1,4 +1,4 @@
-baseURL = "https://www.flysnow.org"
+#baseURL = "https://www.flysnow.org"
 languageCode = "zh-CN"
 title = "测试的博客"
 theme = "maupassant"
